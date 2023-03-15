@@ -1,0 +1,38 @@
+{% extends 'nav.html'%}
+
+{% block body %}
+<div class="container">
+  <!-- використання тега button не є обов'язковвим пунктом типу клас collapse
+  можна використовувати для любого юніту, є один виняток тег (а) для нього
+  data-target не є обовязковим можна використовувати тег href -->
+  <!-- data-target це силка на контейнер з певним внутрішнім id -->
+  <button data-toggle="collapse" data-target="#hide">btn</button>
+  <!-- class="collapse in" клас який відкриває контейнер за замовчкванням -->
+  <div class="collapse" id="hide">
+    <h5>something</h5>
+  </div>
+  <div class="panel-group" id="collapse-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">first one</a>
+      </div>
+      <div class="collapse" id="el1">
+        <div class="panel-body">
+          <h5>text</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">second one</a>
+      </div>
+      <div class="collapse" id="el2">
+        <div class="panel-body">
+          <h5 style="color:red">same text</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'nav.html' %}
+
+{% block body %}
+<div class="container">
+  <!-- data-placement="righ" клас який виведе підсказку з права
+  за замовчуванням з верху -->
+  <a href="#" data-toggle="tooltip" title="hint">hire is hint</a>
+</div>
+
+<!-- потрібний скріпт для підсказки -->
+<script>
+  $(document).ready (function (){
+    $('[data-toggle="tooltip"]').tooltip ();
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "nav.html" %}
+
+
+
+{% block body %}
+<div class="container">
+  <!-- для form class="form-inline" лінійне розміщення юнітів-->
+  <!-- для form class="form-horizotal" горизонтальне розміщеня юнітів  -->
+  <form role="form" class="form-horizotal">
+    <div class="form-group">
+      <!-- class="control-label" використовується для прив'язання до класу form-horizontal -->
+      <label for="email" class="control-label col-md-1">email</label>
+      <div class="col-md-11">
+        <input type="email" class="form-control" id="email" placeholder="pl your email">
+      </div>
+      <p class="help-block">help for you</p>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="password" class="control-label col-md-1">password</label>
+      <div class="col-md-11">
+        <input type="password" class="form-control" id="password" placeholder="pl your password if you remember">
+      </div>
+    </div>
+    <div class="checkbox">
+      <label for="password">
+        <input type="checkbox"> press if still remember
+      </label>
+    </div>
+  </form>
+
+  <form class="form">
+    <!-- додаток класу -inline має бути в всіх елементах які мають бути в лінії-->
+    <div class="radio-inline">
+      <label>
+        <!-- checked вибраний елемент -->
+        <input type="radio" checked>
+        som radio button
+      </label>
+    </div>
+    <div class="radio-inline">
+      <label>
+        <input type="radio" disabled="disabled">
+        som second radio button
+      </label>
+    </div>
+    <br>
+    <select class="form-control" name="">
+      <option>q</option>
+      <option>w</option>
+      <option>e</option>
+    </select>
+  </form>
+
+  <form class="form-horizotal">
+    <!-- class="form-group has-error" клас який приміняється до контейнера div та відображає
+    поля червоним також замість error можна використовувати любий кольоровий стиль бутстрапа -->
+    <div class="form-group">
+      <label class="col-md-1 control-label">email</label>
+      <div class="col-md-11">
+        <p class="form-control-static">workuhguft155@gmail.com</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="pass" class="col-md-1 control-label">password</label>
+      <div class="col-md-11">
+        <!-- class="form-control input-xs" input-xs - ддодаток до класа який відповідає за розмір -->
+        <input type="password" class="form-control" name="" placeholder="f">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+{% endblock %}

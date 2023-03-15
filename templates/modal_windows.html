@@ -1,0 +1,28 @@
+{% extends 'nav.html'%}
+
+{% block body %}
+<div class="container">
+  <button class="btn btn-info" data-toggle="modal" data-target="#inst" >btn</button>
+  <!-- fade клас за який робить анімацтію плавною-->
+  <!-- tabindex="-1" аргумент по якому вікно закривається по кнопці esc-->
+  <div class="modal fade" tabindex="-1" id="inst">
+    <!-- class="modal-dialog" клас встановлення розмірів вікна-->
+    <div class="modal-dialog">
+      <!-- class="modal-content" красота модуля-->
+      <div class="modal-content">
+        <!-- class="modal-header" голова модуля-->
+        <div class="modal-header">
+          <!-- data-dismiss="modal" таргет по якому кнопка стає функціональною-->
+          <button class="close" data-dismiss="modal">x</button>
+        </div>
+        <div class="modal-body">
+          <h5>dhh</h5>
+        </div>
+        <div class="modal-footer">
+          <h5>footer</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

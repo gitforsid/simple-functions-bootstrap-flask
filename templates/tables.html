@@ -1,0 +1,49 @@
+{% extends "nav.html" %}
+
+
+
+{% block body %}
+<div class="table-responsive">
+<!-- контейнер скролу для адаптивних табличок -->
+</div>
+
+
+
+<div class="container">
+  <!-- class="table table-hover"  при наведенні відображається сіруватим-->
+  <!-- class="table table-bordered table-hover"  проста квадратна табличка + виділення при наведенні -->
+  <!-- class="table table-condensed" зменшення відступів таблички (стиснення відступів)-->
+  <table class="table table-striped">
+    <thead>
+      <tr class="active">
+        <!--  також можна давати такіж класи (кольора) як у текст лінку -->
+        <th class="success">first</th>
+        <th>first</th>
+        <th>first</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>second</th>
+        <th>second</th>
+        <th>second</th>
+      </tr>
+      <tr>
+        <th>first</th>
+        <th>first</th>
+        <th>first</th>
+      </tr>
+      <tr>
+        <th>second</th>
+        <th>second</th>
+        <th>second</th>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "nav.html" %}
+
+
+
+{% block body %}
+<div class="container">
+    <button class="btn btn-default">стандартна</button>
+    <button class="btn btn-link">силка</button>
+
+    <input type="submit" class="btn btn-primary" value="OCHOBHa">
+    <input type="button" class="btn btn-success" value="підтвердження">
+
+    <a href="#" class="btn btn-info">re</a>
+  <br><br>
+    <button class="btn btn-default btn-lg">size</button>
+    <button class="btn btn-default btn-md">size</button>
+    <button class="btn btn-default btn-sm">size</button>
+    <button class="btn btn-default btn-xs">size</button>
+  <br><br>
+    <button class="btn btn-info btn-md btn-block">size</button>
+  <br>
+    <button class="btn btn-default active">стандартна</button>
+    <button class="btn btn-default btn-md disabled">стандартна</button>
+  <br><br>
+
+  <!-- class="btn-group" клас який обєднує контейнери в один-->
+  <!-- class="btn-group btn-groub-justified" додаток до попереднього
+  класу який розтягує класи в ссередені на повну відстань вищого класу -->
+  <div class="btn-toolbar">
+
+    <div class="btn-group btn-group-md" data-toggle="buttons">
+      <label class="btn btn-primary">
+        <!-- checkbox відмічає значення кнопки (активна не активна)-->
+        <!-- data-toggle="buttons"  код який знімає видиму частину (галочку) в <input type="checkbox"> -->
+        <input type="checkbox">checkbox
+      </label>
+    </div>
+
+    <div class="btn-group btn-group-md" data-toggle="buttons">
+      <label class="btn btn-primary">
+        <input type="radio">checkbox
+      </label>
+    </div>
+  </div>
+
+  <br>
+  <!-- class="btn-group-vertical" створює вертекальну послідовність юнітів-->
+  <div class="btn-group-vertical btn-group-md" data-toggle="buttons">
+    <label class="btn btn-primary">
+      <input type="radio">checkbox
+    </label>
+    <label class="btn btn-primary">приклад</label>
+    <label class="btn btn-primary">приклад</label>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}
